@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook clone</title>
+    <style>
+        .background{
+            background-color: #f2f4f7; 
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            height: 400px;
+            width: auto;
+        }
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image img{
+            width: 200px;
+            height: auto;
+        }
+        .box{
+            width: 340px;
+            height: 260px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 3%; 
+        }
+        .box input,button{
+            display: block;
+            padding: 10px;
+            margin-block: 5px;
+            margin-inline: 15px; 
+            border: 1px solid #dddfe2;                                   
+            border-radius: 4px;
+            padding: 14px;      
+        }
+        p{
+            margin: auto;
+        }
+        .main_head{
+            display: inline;
+            color: #1877f2; 
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        button{
+            color: white;
+            border-radius: 4px;
+            background-color: #1877f2;
+            font-size: larger;
+            border: none;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+    <div class="container">
+        <div class="image">
+             <img src="facebook-logo-png-9.png" alt="logo">
+        </div>
+       
+    <div class="box">
+  <p>Login in to facebook</p>
+  <form action="/rutu" method="POST">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password?" required>
+    <button type="submit" class="but">Log in</button>
+  </form>
+  <div class="p">
+    <p>Forgot Password?</p>
+    <p>Create new account</p>
+  </div>
+  <button class="button">create a new account</button>
+</div>
+
+    </div>
+    </div>
+</body>
+</html>
